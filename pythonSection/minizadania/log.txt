@@ -1,0 +1,6 @@
+INFO: Login successful
+ERROR: Invalid password
+INFO: File uploaded
+WARNING: Disk space low
+ERROR: Connection timeout
+INFO: User logout

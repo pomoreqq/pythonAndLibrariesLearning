@@ -1,0 +1,7 @@
+Anna:sport
+Tomek:muzyka
+Anna:film
+Kasia:literatura
+Anna:sport
+Tomek:film
+Bartek:muzyka:rock
