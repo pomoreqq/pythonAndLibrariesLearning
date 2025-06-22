@@ -1,0 +1,8 @@
+Anna:Matematyka:4.5  
+Tomek:Historia:3.0  
+Anna:Fizyka:5.0  
+Kasia:Matematyka:4.0  
+Tomek:Matematyka:2.5  
+Anna:Historia:5.0  
+Bartek:Biologia:6.0  
+Anna:Matematyka:4.0

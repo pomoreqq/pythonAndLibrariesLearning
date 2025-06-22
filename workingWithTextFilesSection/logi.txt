@@ -1,0 +1,6 @@
+Anna:logowanie
+Bartek:zakup
+Anna:wylogowanie
+Tomek:logowanie
+Bartek:logowanie
+Anna:zakup

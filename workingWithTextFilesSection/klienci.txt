@@ -1,0 +1,5 @@
+Jan,Kowalski,35
+Anna,Nowak,abc
+Piotr,Zieliński,45
+,,50
+Kasia,Michalska,29

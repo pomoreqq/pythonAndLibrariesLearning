@@ -1,0 +1,3 @@
+Anna Kowalska: {'visit': 2}
+Jan Nowak: {'purchase': 2}
+Ewa Maj: {'visit': 1, 'return': 1}

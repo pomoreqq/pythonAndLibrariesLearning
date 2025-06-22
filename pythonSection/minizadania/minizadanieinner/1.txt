@@ -1,0 +1,4 @@
+A001;Monitor;800
+A002;Laptop;3000
+A003;Myszka;100
+A004;Klawiatura;150

@@ -1,0 +1,6 @@
+Anna Kowalska:visit:2024-06-20
+Jan Nowak:purchase:2024-06-20
+Anna Kowalska:visit:2024-06-21
+Ewa Maj:visit:2024-06-21
+Jan Nowak:purchase:2024-06-22
+Ewa Maj:return:2024-06-23

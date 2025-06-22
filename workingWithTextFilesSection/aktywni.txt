@@ -1,0 +1,2 @@
+Anna:zakup,logowanie,wylogowanie
+Bartek:zakup,logowanie

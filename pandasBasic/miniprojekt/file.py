@@ -1,18 +1,22 @@
-import pandas as pd 
 
-df = pd.read_csv('pandasBasic/miniprojekt/sales.csv')
+import pandas as pd
 
-total = df['price'] * df['quantity']
 
-df['total'] = total
+df = pd.read_csv('pandasBasic/miniprojekt/dane.csv')
+
+df['total'] = df['price'] * df['quantity']
+
 
 totalSum = df['total'].sum()
 
-totalSumByRegion = df.groupby('category')['total'].sum()
-totalSumByDate = df.groupby('date')['total'].sum()
+groupByCategory = df.groupby('category')['total'].sum()
 
-najlepszyprodukt = df.groupby('product')['total'].sum().idxmax()
-najlepszy_dzien = df.groupby('date')['total'].sum().idxmax()
-print(najlepszy_dzien)
+groupByDay = df.groupby('date')['total'].sum()
+print(groupByCategory)
+print(groupByDay)
 
-#najwiecej przyniosla przychoda kategoria electronics, a dzien najwiekszego przychodu to 01.05.2025
+maxCategory = df.groupby('category')['total'].sum().idxmax()
+maxDay = df.groupby('category')['total'].sum().idxmax()
+
+sortedTotalDf = df.sort_values('total', ascending=False)
+print(sortedTotalDf)

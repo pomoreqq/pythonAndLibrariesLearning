@@ -1,0 +1,5 @@
+Anna;A001;2
+Tomek;A002;1
+Anna;A004;1
+Kasia;A003;3
+Tomek;A003;1
