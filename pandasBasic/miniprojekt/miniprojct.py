@@ -1,4 +1,10 @@
-
+# Task: Analyze transactional sales data from a CSV file.
+# - Load data from a CSV file containing 'price', 'quantity', 'category', and 'date'.
+# - Add a new column 'total' by multiplying 'price' and 'quantity'.
+# - Calculate the total revenue.
+# - Group and sum revenue by product category and by day.
+# - Identify the category and day with the highest total revenue.
+# - Sort all transactions by 'total' value in descending order.
 import pandas as pd
 
 

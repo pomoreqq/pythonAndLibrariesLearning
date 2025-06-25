@@ -1,3 +1,11 @@
+
+# Task: Classify and reward VIP clients
+# You are given a list of clients with their names and point balances.
+# 1. Classify each client as VIP if they have more than 100 points.
+# 2. VIP clients receive +50 points, non-VIPs receive +20 points.
+# 3. Print a summary showing each client's name, updated points, and VIP status (if applicable).
+
+
 klienci = [
     {"id": 1, "name": "Anna", "points": 120},
     {"id": 2, "name": "Tomek", "points": 90},

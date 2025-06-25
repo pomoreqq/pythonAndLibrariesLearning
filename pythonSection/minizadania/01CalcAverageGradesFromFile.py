@@ -1,5 +1,7 @@
-
-
+# Task 01: Calculate average grades from file
+# The file `oceny.txt` contains student data in the format: name:subject:grade
+# Some lines may be malformed (e.g. missing parts) — these should be skipped with a warning.
+# For each student, calculate and print their average grade.
 
 
 dane = open('pythonSection/minizadania/oceny.txt', mode='r')

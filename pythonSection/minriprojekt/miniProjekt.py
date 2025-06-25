@@ -1,3 +1,20 @@
+
+
+# Task: 📈 Analyze Two Marketing Campaigns
+# 
+# You are given daily data for two marketing campaigns (A and B):
+# - The number of ad clicks per day.
+# - The total cost spent per day (in PLN).
+# 
+# Your objectives:
+# 1. Calculate the average number of clicks for each campaign.
+# 2. Calculate the average daily cost for each campaign.
+# 3. Calculate the cost per click (CPC) for each campaign: average clicks / average cost.
+# 4. Print a summary report comparing the two campaigns.
+#
+# Bonus:
+# - Which campaign performed better in terms of CPC?
+# - Suggest what could be improved in the experimental setup or analysis.
 # Kampania A
 kampania_a_klikniecia = [120, 135, 150, 145, 160, 155, 170]
 kampania_a_koszt = [60, 65, 70, 68, 75, 72, 78]  # w zł

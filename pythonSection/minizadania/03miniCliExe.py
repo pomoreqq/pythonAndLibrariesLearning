@@ -1,5 +1,12 @@
 
-
+# Task: Collect and summarize user orders
+# Prompt the user repeatedly to input orders in the format: name, product, quantity.
+# Stop when the user types 'stop'.
+# For each correct entry, save the order in a list of dictionaries.
+# After exiting, summarize:
+#   - the number of orders entered,
+#   - a breakdown of products ordered per user.
+# Invalid lines should be skipped with a warning message.
 
 zamowienia = []
 helpDict = dict()

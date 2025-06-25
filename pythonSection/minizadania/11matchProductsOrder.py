@@ -1,3 +1,11 @@
+# Task: Process product orders from two input files
+# File 1 (`1.txt`) contains product data in the format: product_code;product_name;price
+# File 2 (`2.txt`) contains orders in the format: customer_name;product_code;quantity
+#
+# 1. Read all products into a dictionary mapping product codes to name and price.
+# 2. Read all orders and match product codes with their price from the product dictionary.
+# 3. For each order, calculate the total value and print it with the customer's name.
+# 4. In the end, print a summary dictionary showing total spending per customer.
 
 produkty = open('pythonSection/minizadania/minizadanieinner/1.txt', mode='r')
 

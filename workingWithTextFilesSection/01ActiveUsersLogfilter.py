@@ -1,5 +1,10 @@
 
-
+# Zadanie: Filtr aktywnych użytkowników z logów
+# Wczytaj dane z pliku 'logi.txt' w formacie użytkownik:akcja.
+# Zignoruj niepoprawne linie (bez dokładnie jednego dwukropka).
+# Zbuduj słownik, w którym kluczem będzie nazwa użytkownika, a wartością zestaw unikalnych akcji.
+# Zapisz do nowego pliku tylko tych użytkowników, którzy wykonali więcej niż 1 różną akcję,
+# w formacie: użytkownik:akcja1,akcja2,...
 dicttonary = dict()
 with open('workingWithTextFilesSection/logi.txt',mode='r') as f:
     content = f.readlines()

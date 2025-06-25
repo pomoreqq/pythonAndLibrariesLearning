@@ -1,3 +1,11 @@
+# Task: Read and validate a single order from user input
+# Prompt the user to enter order data in the format: product, quantity, price.
+# Validate the input:
+#   - There must be exactly three parts.
+#   - Quantity must be an integer.
+#   - Price must be a float.
+# If validation fails, print an error and retry.
+# Return a dictionary with the parsed order: {'produkt': str, 'ilosc': int, 'cena': float}
 
 
 

@@ -1,3 +1,10 @@
+
+# Task: Filter and sort a list of products
+# You are given a list of products, each with a name, price, and availability status.
+# 1. Sort all products by price in ascending order.
+# 2. Create a new list of available products, sorted by price descending.
+# 3. Print all products, displaying name, price, and availability status ("Dostepny"/"nieDostepny").
+
 produkty = [
     {"name": "Monitor", "price": 800, "available": True},
     {"name": "Laptop", "price": 3000, "available": False},

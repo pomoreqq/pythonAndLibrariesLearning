@@ -1,3 +1,9 @@
+
+# Task: Count user activity from a list of logs
+# You are given a list of dictionaries where each entry has a user and an action.
+# Count how many times each user appears in the log (i.e. total number of actions).
+# Return the result as a dictionary: {user: action_count}
+
 logi = [
     {"user": "Anna", "action": "login"},
     {"user": "Tomek", "action": "upload"},

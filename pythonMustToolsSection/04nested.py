@@ -1,3 +1,10 @@
+# Zadanie: Wyszukiwanie klientów z dużymi zamówieniami (nested loops)
+# Z listy klientów wybierz tych, którzy mają co najmniej jedno zamówienie większe niż zadany próg (threshold).
+# Zadbaj o to, aby dany klient pojawił się tylko raz w wyniku.
+# Zaimplementuj rozwiązanie z wykorzystaniem zagnieżdżonych pętli for.
+# Możesz zwrócić wynik jako listę lub set — zależnie od preferencji (brak duplikatów).
+
+
 clients = [
     {'name': 'Alice', 'orders': [120, 75, 300]},
     {'name': 'Bob', 'orders': []},

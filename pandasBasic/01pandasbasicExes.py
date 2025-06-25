@@ -1,3 +1,9 @@
+
+# Task: Create a DataFrame with employee data and analyze it.
+# - Add a 'seniority' column based on the 'age' value: 'senior' if > 30, else 'junior'.
+# - Filter employees by department (IT and HR).
+# - Sort employees by age in descending order.
+# - Reset the index after sorting.
 dane = [
     {"name": "Anna", "age": 29, "department": "HR"},
     {"name": "Tomek", "age": 35, "department": "Finance"},

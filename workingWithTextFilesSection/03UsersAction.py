@@ -1,5 +1,10 @@
 
-
+# Zadanie: Raport z aktywności użytkowników
+# Wczytaj dane z pliku 'logi2.txt' w formacie: imię_nazwisko:akcja:data.
+# Pomiń linie o niepoprawnym formacie (nie zawierające dokładnie dwóch dwukropków).
+# Dla każdego użytkownika zlicz, ile razy wykonał każdą akcję.
+# Wynik zapisz do pliku 'raport.txt' w formacie:
+# imię_nazwisko: {'akcja1': liczba, 'akcja2': liczba, ...}
 slownik = dict()
 licznik = dict()
 with open('workingWithTextFilesSection/logi2.txt', mode='r') as f:
