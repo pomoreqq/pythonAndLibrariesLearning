@@ -39,7 +39,7 @@
 # 16. Co to jest imputacja i kiedy się ją stosuje?
     #jest to proces zamieniana brakujacych danych lub problematycznych ich estymowanymi wartosciami
 # 17. W jaki sposób można wykryć niezgodność danych (inconsistencies)?
-    # metodami np pandas.isna np.isnan
+    # metodami np pandas.isna np.isnan, wykrywanie niesponosci np formaty dat,niezgodne typy
 # 18. Jakie są potencjalne skutki błędnego oczyszczenia danych?
     # zle zaprojektowane modele do ml, zle wizualizacje
 # 19. Czym różni się preprocessing danych od cleaning?
