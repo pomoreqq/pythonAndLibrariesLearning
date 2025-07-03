@@ -1,0 +1,4 @@
+region_code,region_name,timezone
+1,North America,UTC-5
+2,Europe,UTC+1
+3,Asia,UTC+8
