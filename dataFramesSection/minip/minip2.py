@@ -90,7 +90,21 @@ meanOfSubAndNotSub = mergedSubsWithEventsAgg.groupby('plan').apply(lambda s: s['
 # print(meanOfSubAndNotSub) # srednia eventow per sub 5.5, basic 6.75
 
 print(users['signup_date'])
-#
+#3
 mergedSignUpFromUsersWithSubsDf = pd.merge(subscriptions,users[['user_id','signup_date']],on='user_id', how='left')
-
 print(mergedSignUpFromUsersWithSubsDf)
+mergedSignUpFromUsersWithSubsDf['diffInHours'] = (mergedSignUpFromUsersWithSubsDf['subscription_date'] - mergedSignUpFromUsersWithSubsDf['signup_date']).dt.days
+
+meanOfHoursDiff = mergedSignUpFromUsersWithSubsDf['diffInHours'].mean() # 29.125 srednia czasu zmiany z planu darmowego na subskrycpke
+medianOfHoursDiff = mergedSignUpFromUsersWithSubsDf['diffInHours'].median() # mediana to 17
+
+
+#4 liczba uzytkownikow na plan oraz ktory plan szybciej wybieraja
+
+aggData = mergedSignUpFromUsersWithSubsDf.groupby('plan').agg(
+    userSumPerPlan = ('user_id','count'),
+    meanTimeToGetPlanPerPlan = ('diffInHours', 'mean')
+)
+
+print(aggData)
+# uzytkownicy per plan 4 dla obu, krotszy czas srednio do wyboru planu jest do planu basic 16,75 dnia, dla pro wynosi on 41,5
