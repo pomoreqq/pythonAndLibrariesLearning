@@ -108,3 +108,35 @@ aggData = mergedSignUpFromUsersWithSubsDf.groupby('plan').agg(
 
 print(aggData)
 # uzytkownicy per plan 4 dla obu, krotszy czas srednio do wyboru planu jest do planu basic 16,75 dnia, dla pro wynosi on 41,5
+
+# 1. ✅ Którzy użytkownicy są najaktywniejsi i co ich łączy?
+# Czy subskrybenci są bardziej aktywni niż użytkownicy bez planu?
+    # nie sa
+# Czy są różnice między planami (basic vs pro) pod kątem aktywności?
+    # basic sa delikatnie aktywnejsi
+
+#     2. 🌍 Czy platforma lub region wpływają na zaangażowanie?
+# Może użytkownicy mobile mają mniej eventów?
+    # nie robilismy zadan pod taka analize nie moge stiwerdzic
+# A może w jednym regionie subskrybują szybciej?
+    # nie robilismy zadan pod taka analize nie moge stwierdzic
+
+#3. ⏱ Kiedy użytkownicy najczęściej subskrybują?
+# Krótko po rejestracji?
+
+# Czy może po dłuższym czasie, np. po testowaniu?
+    # subskrybuja po jakims czasie czyli po testowaniu
+
+#     4. 💰 Który plan jest bardziej atrakcyjny — basic czy pro?
+# Co sugerują liczby (popularność, czas decyzji, aktywność)?
+
+# Czy różnica w czasie (16 vs 41 dni) może sugerować coś o strategii?
+    # sugeruje moze to ze cena planu basic jak na jego funckjonalnosci jest o wiele bardziej atrakcyjna niz wersja pro
+
+
+    #5. 📌 Rekomendacje marketingowe lub produktowe
+# Czy warto przypominać o planie pro po X dniach?
+    # RACZEJj nie, jest to zbyt agresywna reklama ktora nie nalzy do przyjemnych dla uzytkownika, chyba ze z jakims discountem
+# Czy zachęcać szybciej do subskrypcji na mobile?
+    # nie robilismy pod to analizy
+# Może w jakimś regionie warto zwiększyć obecność?  # nie robilismy pod to analizy

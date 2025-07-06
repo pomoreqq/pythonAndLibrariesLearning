@@ -23,6 +23,6 @@ groupBySegAndMon = mergedDf.groupby(['segment','month']).agg(
 )
 
 pivotTable = groupBySegAndMon.pivot_table(index='segment',columns='month',values='meanAmount')
-print(pivotTable)
+
 pivotTable = pivotTable.melt()
 print(pivotTable)
