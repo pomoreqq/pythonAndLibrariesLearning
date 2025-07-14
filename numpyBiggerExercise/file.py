@@ -108,7 +108,7 @@ indicesOfPremium = np.where(subTypeSecond == 'premium')
 premiumWatchTime = watchTimeThird[indicesOfPremium].astype(np.float32)
 meanOfPremiumWatchTime = np.mean(premiumWatchTime)
 
-unique_subs, inverse = np.unique(data[:,3], return_inverse=True)
+# unique_subs, inverse = np.unique(data[:,3], return_inverse=True)
 
 # for i, sub in enumerate(unique_subs):
 #     mask = inverse == i
@@ -141,12 +141,16 @@ percentageOfPremium = (len(valueOfPremiumInWatchedToEnd[valueOfPremiumInWatchedT
 from datetime import datetime
 watchedDateSecond = data[:,6]
 watchTimeFourth = data[:,2].astype(np.float32)
+
 def getDayName(dateString):
     return datetime.strptime(dateString,"%Y-%m-%d").strftime("%A")
 
 vGetDayName = np.vectorize(getDayName)
+
 dayNames = vGetDayName(watchedDateSecond)
+
 uniqueDays,inverseIndicies = np.unique(dayNames,return_inverse=True)
+
 totalWatchArr = list()
 for i,day in enumerate(uniqueDays):
     mask = inverseIndicies == i
@@ -156,10 +160,46 @@ for i,day in enumerate(uniqueDays):
 indiceOfMaxSumDay = np.argmax(totalWatchArr)
 maxDay = uniqueDays[indiceOfMaxSumDay]
 
-mondanyIndices = np.where(dayNames =='Monday')
-mondayWatchTime = watchTimeFourth[mondanyIndices]
-sumOfMonday = np.sum(mondayWatchTime)
-print(sumOfMonday)
+# # Monday
+# mondayIndices = np.where(dayNames == 'Monday')
+# mondayWatchTime = watchTimeFourth[mondayIndices]
+# sumOfMonday = np.sum(mondayWatchTime)
+
+# # Tuesday
+# tuesdayIndices = np.where(dayNames == 'Tuesday')
+# tuesdayWatchTime = watchTimeFourth[tuesdayIndices]
+# sumOfTuesday = np.sum(tuesdayWatchTime)
+
+# # Wednesday
+# wednesdayIndices = np.where(dayNames == 'Wednesday')
+# wednesdayWatchTime = watchTimeFourth[wednesdayIndices]
+# sumOfWednesday = np.sum(wednesdayWatchTime)
+
+# # Thursday
+# thursdayIndices = np.where(dayNames == 'Thursday')
+# thursdayWatchTime = watchTimeFourth[thursdayIndices]
+# sumOfThursday = np.sum(thursdayWatchTime)
+
+# # Friday
+# fridayIndices = np.where(dayNames == 'Friday')
+# fridayWatchTime = watchTimeFourth[fridayIndices]
+# sumOfFriday = np.sum(fridayWatchTime)
+
+# # Saturday
+# saturdayIndices = np.where(dayNames == 'Saturday')
+# saturdayWatchTime = watchTimeFourth[saturdayIndices]
+# sumOfSaturday = np.sum(saturdayWatchTime)
+
+# # Sunday
+# sundayIndices = np.where(dayNames == 'Sunday')
+# sundayWatchTime = watchTimeFourth[sundayIndices]
+# sumOfSunday = np.sum(sundayWatchTime)
+
+# array = np.array([sumOfTuesday,sumOfMonday,sumOfWednesday,sumOfThursday,sumOfFriday,sumOfSaturday,sumOfSunday])
+# maxFrom = np.max(array).argmax()
+# days = np.array(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'])
+# print(days[maxFrom])
+
 
 # 8. Ktory dzien ma najnizszy wskaznik zakonczonych ogladan (watched_to_end = 1)? poniedzialek
 
